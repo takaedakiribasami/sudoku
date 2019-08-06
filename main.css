@@ -1,0 +1,219 @@
+body{
+   background-color: #444444;
+   font-family:sans-serif;
+}
+
+/* メイン */
+.main{
+   margin: 5px;
+   display: inline-block;
+}
+
+.sudoku-tab {
+   margin:0 auto;
+}
+
+.outer-tab {
+   width: 594px;
+   height: 594px;
+   border-collapse: collapse;
+}
+
+.outer-tab td {
+   padding: 0px;
+   border: solid 3px #ffffff;
+}
+
+.inner-tab {
+   width: 100%;
+   height: 100%;
+   border-collapse: collapse;
+}
+
+.inner-tab td {
+   padding: 0px;
+   border: solid 1px #ffffff;
+}
+
+.st-cell {
+   width: 66px;
+   height: 66px;
+   margin: 0px;
+   padding: 0px;
+   text-align: center;
+   line-height: 1.1;
+   font-size: 14pt;
+   border-style: none;
+   background-color: #444444;
+   color: #00ddff;
+}
+
+.one-num-cell {
+   font-size: 24pt;
+}
+
+.fixed-cell {
+   font-size: 24pt;
+   color: #ffffff;
+}
+
+.target-st-cell {
+   background-color: #00ddff;
+   color: #000000;
+}
+
+/* サイド */
+.side{
+   margin:5px 5px 5px 10px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.num-button {
+    margin:0 auto;
+}
+
+.nb-tab {
+   padding: 0px;
+   width: 210px;
+   height: 210px;
+   border-collapse: collapse;
+   border: solid 3px #ffffff;
+}
+
+.nb-tab td{
+   margin: 0px;
+   padding: 0px;
+   border: solid 1px #ffffff;
+   text-align: center;
+   font-size: 24pt;
+}
+
+.nb-cell{
+   width: 70px;
+   height: 70px;
+   margin: 0px;
+   padding: 0px;
+   text-align: center;
+   font-size: 24pt;
+   border-style: none;
+   background-color: #444444;
+   color: #ffffff;
+ }
+
+.nb-target{
+   background-color: #00ddff;
+   color: #000000;
+}
+
+#misc{
+   border-style: solid;
+   border-color: #ddd;
+   margin-top: 40px;
+   text-align: center;
+   padding: 5px;
+}
+
+#check{
+   width: 170px;
+   background: #ddd;
+   margin: 10px 5px;
+   padding: 10px 20px;
+   border-radius: 10px;
+   display: inline-block;
+   position: relative;
+   font-size: 14px;
+}
+
+#reset{
+   width: 170px;
+   background: #ddd;
+   margin: 10px 5px;
+   padding: 10px 20px;
+   border-radius: 10px;
+   display: inline-block;
+   position: relative;
+   font-size: 14px;
+}
+
+/*数字固定ボタン*/
+#fix {
+   width: 170px;
+   background: #ddd;
+   margin: 10px 5px;
+   padding: 10px 30px;
+   border-radius: 10px;
+   display: inline-block;
+   position: relative;
+   font-size: 14px;
+}
+
+
+/*数独テーブルと数字ボタンの切り替え表示*/
+.selected{
+   border-width: 7px;
+   border-style: solid;
+   border-color: #00ddff;
+}
+
+.not-selected{
+   border-width: 7px;
+   border-style: solid;
+   border-color: #444444;
+}
+
+/*フッター*/
+.footer{
+   margin-top: 10px;
+}
+/*ファイル読み込みボタン*/
+input[type="file"] {
+   display: none;
+}
+
+label {
+   background: #ddd;
+   padding: 10px 20px;
+   border-radius: 10px;
+   display: inline-block;
+   position: relative;
+}
+
+.filename {
+   padding: 5p;
+   background-color: #ddd;
+   color: #4d4d4d;
+   /*color: #ffffff;*/
+   font-size: 14px;
+}
+
+#uploaded{
+   margin: 5px;
+   padding: 5px;
+   color:#eeeeee;
+   font-size: 16px;
+   background-color: #808080;
+   border-color: #696969;
+}
+
+/*ローディング画面*/
+#loader-bg {
+   display: none;
+   background: #444444;
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   z-index: 10;
+}
+#loader-bg img {	
+   background: #fff;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   z-index: 10;
+}

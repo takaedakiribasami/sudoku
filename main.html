@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>SUDOKU Editer</title>
+    <link rel="stylesheet" href="./main.css" type="text/css">
+</head>
+
+<body>
+    <div class="main">
+        <div id="sudoku-tab"></div>
+    </div>
+    <div class="side">
+        <div id="num-button"></div>
+        <div id="misc">
+            <button type="button" id="check" name="check">チェック</button><br>
+            <button type="button" id="reset" name="reset">リセット</button><br>
+            <button type="button" id="fix" name="fix">確定</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="file-loader">
+            <input type="file" id="fread" name="fread">
+            <label for="fread" id="input-label">ファイル読込み</label>
+            <br>
+            <input type="uploaded" id="uploaded" name="uploaded" value="No File" readonly size="80">
+        </div>
+    </div>
+    <script type="text/javascript" src="./sudoku.js"></script>
+    <script>
+        run()
+    </script>
+
+    <div id="loader-bg">
+        <img src="./img/load.gif">
+    </div>
+</body>
+
+</html>
